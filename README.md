@@ -28,7 +28,7 @@ results/   保存した結果（jev_results_*.json）
 | ケース1　履歴の渡し方の表（ログのみ 0.20／文章 0.41／配列 0.68） | `jev_results_ops.json`、`jev_results_contra.json` | `CI/ablation/full`、`C2/history_as_words`、`C2/history_as_numbers`（`enough_info`） |
 | ケース1　候補の拮抗（0.51 対 0.48、confidence 0.35） | `jev_results_contra.json` | `C1/history_B_only` |
 | ケース1　コラム「証拠が矛盾していれば割れる、ではありませんでした」 | `jev_results_contra.json` | `C1/history_A_only`、`C1/contradiction_A_and_B` |
-| 測っていないこと（`30 s` と `30000 ms`） | `jev_results_ops.json` | `CI/notation/seconds`、`CI/notation/millis` |
+| 測っていないこと（`30 s` と `30000 ms`、緊急度の confidence 0.84 と 0.75） | `jev_results_ops.json` | `CI/notation/seconds`、`CI/notation/millis` の `severity[1]` |
 | ケース2　社内イシューのトリアージ | `jev_results_ops.json` | `ISSUE/*` |
 | コラム「質問や指示は英語にすべきか」 | `jev_results_lang.json`、`jev_results_lang_cross.json`、`jev_results_accuracy.json`、`jev_results_accuracy2.json` | すべて |
 | ケース3　ループを続けるか人を呼ぶか | `jev_results_ops.json` | `LOOP/*` |
@@ -36,10 +36,10 @@ results/   保存した結果（jev_results_*.json）
 | ケース5　ログ行の扱いを決める | `jev_results_ops.json`、`jev_results_split.json` | `MON/*`、`A/monitor/*` |
 | cannot_tell は常に入れるべきか | `jev_results_cost.json` | すべて |
 | Choice、Score、Noul それぞれの confidence 値（段階数・4択） | `jev_results_score.json`、`jev_results_split.json` | すべて、`B/*` |
-| 測っていないこと（架空の通貨での桁の効果） | `jev_results.json`、`jev_results_c2.json`〜`jev_results_c5.json` | `A/*`〜`C/*`、`C2/*`〜`C5/*` |
+| 測っていないこと（架空の通貨で桁だけ変えた Noul 0.61 → 0.28） | `jev_results_c5.json` | `C5/house12`、`C5/house120000` の `unfair` |
 | 補集合ではない二命題の回答例（0.07 と 0.05） | `jev_results.json` | `F/salary/$5,000,000` |
 
-`jev_results.json` の `D/*`（同一入力の繰り返し）と `E/*`（架空の通貨での日英比較）、`jev_results_ops.json` の `CI/words/*` は、記事の初期の版で使った系列です。
+`jev_results.json` の `A/*`〜`E/*`、`jev_results_c2.json`〜`jev_results_c4.json`、`jev_results_ops.json` の `CI/words/*` は、記事の初期の版で使った系列です（架空の通貨での桁の効果の検討と、同一入力の繰り返し、日英比較）。
 
 同じ入力を別の系列で測り直したものは、値がわずかに異なることがあります。たとえば未使用変数の指摘は `jev_results_ops.json` の `REVIEW/obvious` で 0.93、`jev_results_cost.json` の `review_obvious/3択(既測)` で 0.92 です。
 
