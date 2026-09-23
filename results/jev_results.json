@@ -1,0 +1,106 @@
+{
+ "A/count/1cu": {
+  "unfair": 0.89,
+  "fair": 0.07
+ },
+ "A/count/3cu": {
+  "unfair": 0.85,
+  "fair": 0.1
+ },
+ "A/count/30cu": {
+  "unfair": 0.79,
+  "fair": 0.16
+ },
+ "A/count/300cu": {
+  "unfair": 0.71,
+  "fair": 0.23
+ },
+ "A/count/3000cu": {
+  "unfair": 0.64,
+  "fair": 0.3
+ },
+ "A/count/30000cu": {
+  "unfair": 0.52,
+  "fair": 0.44
+ },
+ "B/denom/3copper": {
+  "unfair": 0.85,
+  "fair": 0.1
+ },
+ "B/denom/3silver": {
+  "unfair": 0.78,
+  "fair": 0.15
+ },
+ "B/denom/3gold": {
+  "unfair": 0.8,
+  "fair": 0.15
+ },
+ "B/denom/3platinum": {
+  "unfair": 0.72,
+  "fair": 0.23
+ },
+ "C/override/house": {
+  "unfair": 0.6,
+  "fair": 0.1
+ },
+ "C/override/bread": {
+  "unfair": 0.88,
+  "fair": 0.08
+ },
+ "D/repeat/3cu#2": {
+  "unfair": 0.85,
+  "fair": 0.1
+ },
+ "D/repeat/3000cu#2": {
+  "unfair": 0.65,
+  "fair": 0.28
+ },
+ "D/repeat/3cu#3": {
+  "unfair": 0.85,
+  "fair": 0.1
+ },
+ "D/repeat/3000cu#3": {
+  "unfair": 0.63,
+  "fair": 0.3
+ },
+ "E/ja/count/1": {
+  "unfair": 0.87,
+  "fair": 0.09
+ },
+ "E/ja/count/3": {
+  "unfair": 0.8,
+  "fair": 0.15
+ },
+ "E/ja/count/30": {
+  "unfair": 0.72,
+  "fair": 0.22
+ },
+ "E/ja/count/300": {
+  "unfair": 0.68,
+  "fair": 0.26
+ },
+ "E/ja/count/3000": {
+  "unfair": 0.62,
+  "fair": 0.3
+ },
+ "E/ja/count/30000": {
+  "unfair": 0.5,
+  "fair": 0.41
+ },
+ "F/salary/$1,000": {
+  "unfair": 0.98,
+  "fair": 0.01
+ },
+ "F/salary/$50,000": {
+  "unfair": 0.96,
+  "fair": 0.02
+ },
+ "F/salary/$150,000": {
+  "unfair": 0.39,
+  "fair": 0.53
+ },
+ "F/salary/$5,000,000": {
+  "unfair": 0.07,
+  "fair": 0.05
+ }
+}

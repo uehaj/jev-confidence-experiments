@@ -1,0 +1,52 @@
+{
+ "score_3levels": {
+  "probabilities": [
+   0.34,
+   0.62,
+   0.04
+  ],
+  "confidence": 0.44,
+  "formula": 0.43,
+  "diff": 0.01,
+  "score": 0.7
+ },
+ "score_4levels": {
+  "probabilities": [
+   0.01,
+   0.55,
+   0.4,
+   0.03
+  ],
+  "confidence": 0.52,
+  "formula": 0.4,
+  "diff": 0.12,
+  "score": 1.45
+ },
+ "score_5levels": {
+  "probabilities": [
+   0.01,
+   0.49,
+   0.44,
+   0.06,
+   0.0
+  ],
+  "confidence": 0.52,
+  "formula": 0.363,
+  "diff": 0.157,
+  "score": 1.56
+ },
+ "score_6levels": {
+  "probabilities": [
+   0.0,
+   0.23,
+   0.48,
+   0.26,
+   0.03,
+   0.0
+  ],
+  "confidence": 0.62,
+  "formula": 0.376,
+  "diff": 0.244,
+  "score": 2.09
+ }
+}

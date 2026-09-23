@@ -1,0 +1,210 @@
+{
+ "JA/00": {
+  "gold": "app",
+  "lure": "infra",
+  "choice": "app",
+  "confidence": 0.99,
+  "probabilities": {
+   "app": 1.0,
+   "account": 0.0,
+   "infra": 0.0,
+   "cannot_tell": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/01": {
+  "gold": "infra",
+  "lure": "app",
+  "choice": "infra",
+  "confidence": 1.0,
+  "probabilities": {
+   "cannot_tell": 0.0,
+   "app": 0.0,
+   "infra": 1.0,
+   "account": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/02": {
+  "gold": "account",
+  "lure": "app",
+  "choice": "account",
+  "confidence": 0.8,
+  "probabilities": {
+   "cannot_tell": 0.03,
+   "app": 0.12,
+   "account": 0.85,
+   "infra": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/03": {
+  "gold": "app",
+  "lure": "account",
+  "choice": "app",
+  "confidence": 0.75,
+  "probabilities": {
+   "app": 0.81,
+   "cannot_tell": 0.01,
+   "infra": 0.0,
+   "account": 0.18
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/04": {
+  "gold": "infra",
+  "lure": "account",
+  "choice": "infra",
+  "confidence": 1.0,
+  "probabilities": {
+   "app": 0.0,
+   "account": 0.0,
+   "infra": 1.0,
+   "cannot_tell": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/05": {
+  "gold": "app",
+  "lure": "infra",
+  "choice": "app",
+  "confidence": 0.96,
+  "probabilities": {
+   "infra": 0.01,
+   "account": 0.0,
+   "app": 0.97,
+   "cannot_tell": 0.02
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/06": {
+  "gold": "account",
+  "lure": "infra",
+  "choice": "account",
+  "confidence": 0.99,
+  "probabilities": {
+   "cannot_tell": 0.0,
+   "account": 0.99,
+   "app": 0.0,
+   "infra": 0.01
+  },
+  "model": "jev-1.13.0"
+ },
+ "JA/07": {
+  "gold": "infra",
+  "lure": "app",
+  "choice": "infra",
+  "confidence": 0.89,
+  "probabilities": {
+   "infra": 0.91,
+   "account": 0.0,
+   "app": 0.07,
+   "cannot_tell": 0.02
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/00": {
+  "gold": "app",
+  "lure": "infra",
+  "choice": "app",
+  "confidence": 1.0,
+  "probabilities": {
+   "account": 0.0,
+   "infra": 0.0,
+   "app": 1.0,
+   "cannot_tell": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/01": {
+  "gold": "infra",
+  "lure": "app",
+  "choice": "infra",
+  "confidence": 0.96,
+  "probabilities": {
+   "cannot_tell": 0.01,
+   "app": 0.01,
+   "account": 0.0,
+   "infra": 0.98
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/02": {
+  "gold": "account",
+  "lure": "app",
+  "choice": "account",
+  "confidence": 0.91,
+  "probabilities": {
+   "cannot_tell": 0.0,
+   "infra": 0.0,
+   "app": 0.06,
+   "account": 0.94
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/03": {
+  "gold": "app",
+  "lure": "account",
+  "choice": "account",
+  "confidence": 0.37,
+  "probabilities": {
+   "cannot_tell": 0.0,
+   "account": 0.53,
+   "infra": 0.01,
+   "app": 0.46
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/04": {
+  "gold": "infra",
+  "lure": "account",
+  "choice": "infra",
+  "confidence": 1.0,
+  "probabilities": {
+   "infra": 1.0,
+   "app": 0.0,
+   "account": 0.0,
+   "cannot_tell": 0.0
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/05": {
+  "gold": "app",
+  "lure": "infra",
+  "choice": "app",
+  "confidence": 0.88,
+  "probabilities": {
+   "app": 0.91,
+   "account": 0.0,
+   "infra": 0.01,
+   "cannot_tell": 0.08
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/06": {
+  "gold": "account",
+  "lure": "infra",
+  "choice": "account",
+  "confidence": 0.99,
+  "probabilities": {
+   "app": 0.0,
+   "cannot_tell": 0.0,
+   "infra": 0.01,
+   "account": 0.99
+  },
+  "model": "jev-1.13.0"
+ },
+ "EN/07": {
+  "gold": "infra",
+  "lure": "app",
+  "choice": "infra",
+  "confidence": 0.99,
+  "probabilities": {
+   "app": 0.0,
+   "cannot_tell": 0.0,
+   "infra": 1.0,
+   "account": 0.0
+  },
+  "model": "jev-1.13.0"
+ }
+}

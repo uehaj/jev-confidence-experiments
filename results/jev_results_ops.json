@@ -1,0 +1,221 @@
+{
+ "CI/notation/seconds": {
+  "cause": [
+   "cannot_tell",
+   0.56
+  ],
+  "severity": [
+   0.11,
+   0.84
+  ],
+  "enough_info": 0.05
+ },
+ "CI/notation/millis": {
+  "cause": [
+   "cannot_tell",
+   0.62
+  ],
+  "severity": [
+   0.17,
+   0.75
+  ],
+  "enough_info": 0.05
+ },
+ "CI/notation/gigabytes": {
+  "cause": [
+   "cannot_tell",
+   0.22
+  ],
+  "severity": [
+   1.19,
+   0.0
+  ],
+  "enough_info": 0.06
+ },
+ "CI/notation/bytes": {
+  "cause": [
+   "cannot_tell",
+   0.29
+  ],
+  "severity": [
+   1.19,
+   0.0
+  ],
+  "enough_info": 0.06
+ },
+ "CI/ablation/full": {
+  "cause": [
+   "real_regression",
+   0.99
+  ],
+  "severity": [
+   1.69,
+   0.54
+  ],
+  "enough_info": 0.2
+ },
+ "CI/ablation/partial": {
+  "cause": [
+   "cannot_tell",
+   0.78
+  ],
+  "severity": [
+   1.14,
+   0.33
+  ],
+  "enough_info": 0.06
+ },
+ "CI/ablation/minimal": {
+  "cause": [
+   "cannot_tell",
+   0.99
+  ],
+  "severity": [
+   1.12,
+   0.0
+  ],
+  "enough_info": 0.04
+ },
+ "CI/words/flaky": {
+  "cause": [
+   "real_regression",
+   0.46
+  ],
+  "severity": [
+   0.59,
+   0.12
+  ],
+  "enough_info": 0.15
+ },
+ "CI/words/regression": {
+  "cause": [
+   "real_regression",
+   1.0
+  ],
+  "severity": [
+   1.71,
+   0.56
+  ],
+  "enough_info": 0.4
+ },
+ "ISSUE/full": {
+  "team": [
+   "app",
+   1.0
+  ],
+  "urgency": [
+   1.23,
+   0.65
+  ],
+  "has_repro": 0.9,
+  "enough_info": 0.33
+ },
+ "ISSUE/partial": {
+  "team": [
+   "app",
+   0.9
+  ],
+  "urgency": [
+   1.38,
+   0.4
+  ],
+  "has_repro": 0.06,
+  "enough_info": 0.24
+ },
+ "ISSUE/minimal": {
+  "team": [
+   "cannot_tell",
+   0.99
+  ],
+  "urgency": [
+   1.53,
+   0.29
+  ],
+  "has_repro": 0.05,
+  "enough_info": 0.09
+ },
+ "ISSUE/repro_incomplete": {
+  "team": [
+   "app",
+   0.98
+  ],
+  "urgency": [
+   1.25,
+   0.56
+  ],
+  "has_repro": 0.25,
+  "enough_info": 0.22
+ },
+ "LOOP/evidence_rich": {
+  "next": [
+   "continue",
+   0.97
+  ],
+  "enough_info": 0.65
+ },
+ "LOOP/evidence_poor": {
+  "next": [
+   "continue",
+   0.93
+  ],
+  "enough_info": 0.14
+ },
+ "LOOP/repeated_same": {
+  "next": [
+   "continue",
+   0.17
+  ],
+  "enough_info": 0.13
+ },
+ "REVIEW/obvious": {
+  "disposition": [
+   "auto_fix",
+   0.93
+  ],
+  "grounded": 0.98
+ },
+ "REVIEW/debatable": {
+  "disposition": [
+   "human_review",
+   0.15
+  ],
+  "grounded": 0.17
+ },
+ "REVIEW/false_positive": {
+  "disposition": [
+   "dismiss",
+   0.87
+  ],
+  "grounded": 0.02
+ },
+ "MON/repeat#1": {
+  "action": [
+   "ticket",
+   0.27
+  ]
+ },
+ "MON/repeat#2": {
+  "action": [
+   "ticket",
+   0.31
+  ]
+ },
+ "MON/repeat#3": {
+  "action": [
+   "ticket",
+   0.29
+  ]
+ },
+ "MON/straddle_low": {
+  "action": [
+   "ignore",
+   0.3
+  ]
+ },
+ "MON/straddle_high": {
+  "action": [
+   "page",
+   0.99
+  ]
+ }
+}

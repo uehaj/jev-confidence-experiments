@@ -1,0 +1,14 @@
+{
+ "C4/numeral3000+words": {
+  "unfair": 0.46,
+  "fair": 0.53
+ },
+ "C4/numeral3+words": {
+  "unfair": 0.45,
+  "fair": 0.3
+ },
+ "C4/nonumeral_tinyworld": {
+  "unfair": 0.54,
+  "fair": 0.29
+ }
+}

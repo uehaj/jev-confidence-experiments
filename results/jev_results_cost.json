@@ -1,0 +1,40 @@
+{
+ "review_obvious/3択(既測)": {
+  "choice": "auto_fix",
+  "confidence": 0.92,
+  "probabilities": {
+   "dismiss": 0.02,
+   "human_review": 0.03,
+   "auto_fix": 0.95
+  }
+ },
+ "review_obvious/4択(+ct)": {
+  "choice": "auto_fix",
+  "confidence": 0.82,
+  "probabilities": {
+   "cannot_tell": 0.02,
+   "human_review": 0.09,
+   "dismiss": 0.03,
+   "auto_fix": 0.86
+  }
+ },
+ "ci_fulllog/4択(既測)": {
+  "choice": "real_regression",
+  "confidence": 0.99,
+  "probabilities": {
+   "cannot_tell": 0.01,
+   "config_error": 0.0,
+   "flaky_infra": 0.0,
+   "real_regression": 0.99
+  }
+ },
+ "ci_fulllog/3択(-ct)": {
+  "choice": "real_regression",
+  "confidence": 1.0,
+  "probabilities": {
+   "real_regression": 1.0,
+   "flaky_infra": 0.0,
+   "config_error": 0.0
+  }
+ }
+}

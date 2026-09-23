@@ -1,0 +1,98 @@
+{
+ "G/full": {
+  "level": {
+   "probabilities": [
+    0.6,
+    0.04,
+    0.36
+   ],
+   "confidence": 0.4,
+   "peak_formula": 0.4,
+   "answer": "below_market"
+  },
+  "appropriate": {
+   "probabilities": [
+    0.01,
+    0.5,
+    0.44,
+    0.05,
+    0.0
+   ],
+   "confidence": 0.53,
+   "peak_formula": 0.375,
+   "answer": 1.54
+  }
+ },
+ "G/partial": {
+  "level": {
+   "probabilities": [
+    0.81,
+    0.1,
+    0.09
+   ],
+   "confidence": 0.71,
+   "peak_formula": 0.715,
+   "answer": "at_market"
+  },
+  "appropriate": {
+   "probabilities": [
+    0.0,
+    0.07,
+    0.84,
+    0.09,
+    0.0
+   ],
+   "confidence": 0.87,
+   "peak_formula": 0.8,
+   "answer": 2.02
+  }
+ },
+ "G/minimal": {
+  "level": {
+   "probabilities": [
+    0.07,
+    0.92,
+    0.01
+   ],
+   "confidence": 0.88,
+   "peak_formula": 0.88,
+   "answer": "at_market"
+  },
+  "appropriate": {
+   "probabilities": [
+    0.0,
+    0.01,
+    0.67,
+    0.31,
+    0.01
+   ],
+   "confidence": 0.73,
+   "peak_formula": 0.5875,
+   "answer": 2.31
+  }
+ },
+ "G/obvious": {
+  "level": {
+   "probabilities": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "confidence": 1.0,
+   "peak_formula": 1.0,
+   "answer": "below_market"
+  },
+  "appropriate": {
+   "probabilities": [
+    0.99,
+    0.01,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "confidence": 0.99,
+   "peak_formula": 0.9875,
+   "answer": 0.01
+  }
+ }
+}

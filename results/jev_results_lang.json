@@ -1,0 +1,122 @@
+{
+ "JA/full": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 1.0,
+  "team_probs": {
+   "account": 0.0,
+   "cannot_tell": 0.0,
+   "app": 1.0,
+   "infra": 0.0
+  },
+  "urgency": 1.2,
+  "urgency_conf": 0.7,
+  "has_repro": 0.88,
+  "enough_info": 0.32
+ },
+ "JA/partial": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.93,
+  "team_probs": {
+   "cannot_tell": 0.05,
+   "account": 0.0,
+   "app": 0.95,
+   "infra": 0.0
+  },
+  "urgency": 1.4,
+  "urgency_conf": 0.38,
+  "has_repro": 0.06,
+  "enough_info": 0.24
+ },
+ "JA/minimal": {
+  "model": "jev-1.13.0",
+  "team": "cannot_tell",
+  "team_conf": 0.99,
+  "team_probs": {
+   "app": 0.01,
+   "cannot_tell": 0.99,
+   "infra": 0.0,
+   "account": 0.0
+  },
+  "urgency": 1.51,
+  "urgency_conf": 0.26,
+  "has_repro": 0.05,
+  "enough_info": 0.09
+ },
+ "JA/repro_incomplete": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.98,
+  "team_probs": {
+   "account": 0.0,
+   "app": 0.99,
+   "cannot_tell": 0.01,
+   "infra": 0.0
+  },
+  "urgency": 1.29,
+  "urgency_conf": 0.51,
+  "has_repro": 0.27,
+  "enough_info": 0.23
+ },
+ "EN/full": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 1.0,
+  "team_probs": {
+   "app": 1.0,
+   "cannot_tell": 0.0,
+   "account": 0.0,
+   "infra": 0.0
+  },
+  "urgency": 1.46,
+  "urgency_conf": 0.3,
+  "has_repro": 0.85,
+  "enough_info": 0.31
+ },
+ "EN/partial": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.96,
+  "team_probs": {
+   "cannot_tell": 0.03,
+   "infra": 0.0,
+   "app": 0.97,
+   "account": 0.0
+  },
+  "urgency": 1.36,
+  "urgency_conf": 0.4,
+  "has_repro": 0.05,
+  "enough_info": 0.26
+ },
+ "EN/minimal": {
+  "model": "jev-1.13.0",
+  "team": "cannot_tell",
+  "team_conf": 1.0,
+  "team_probs": {
+   "infra": 0.0,
+   "app": 0.0,
+   "account": 0.0,
+   "cannot_tell": 1.0
+  },
+  "urgency": 0.97,
+  "urgency_conf": 0.04,
+  "has_repro": 0.03,
+  "enough_info": 0.05
+ },
+ "EN/repro_incomplete": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.99,
+  "team_probs": {
+   "app": 0.99,
+   "cannot_tell": 0.01,
+   "infra": 0.0,
+   "account": 0.0
+  },
+  "urgency": 1.27,
+  "urgency_conf": 0.57,
+  "has_repro": 0.23,
+  "enough_info": 0.24
+ }
+}

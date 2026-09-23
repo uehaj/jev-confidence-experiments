@@ -1,0 +1,67 @@
+{
+ "A/monitor/cannot_tell#1": {
+  "choice": "cannot_tell",
+  "confidence": 0.41,
+  "n": 4,
+  "peak": 0.56,
+  "formula": 0.413,
+  "probabilities": {
+   "cannot_tell": 0.56,
+   "ignore": 0.0,
+   "page": 0.22,
+   "ticket": 0.22
+  }
+ },
+ "A/monitor/cannot_tell#2": {
+  "choice": "cannot_tell",
+  "confidence": 0.4,
+  "n": 4,
+  "peak": 0.55,
+  "formula": 0.4,
+  "probabilities": {
+   "cannot_tell": 0.55,
+   "page": 0.23,
+   "ticket": 0.22,
+   "ignore": 0.0
+  }
+ },
+ "A/review/cannot_tell": {
+  "choice": "cannot_tell",
+  "confidence": 0.22,
+  "n": 4,
+  "peak": 0.41,
+  "formula": 0.213,
+  "probabilities": {
+   "auto_fix": 0.06,
+   "cannot_tell": 0.41,
+   "human_review": 0.32,
+   "dismiss": 0.21
+  }
+ },
+ "B/ci_cause_n4": {
+  "choice": "real_regression",
+  "confidence": 0.99,
+  "n": 4,
+  "peak": 0.99,
+  "formula": 0.987,
+  "probabilities": {
+   "cannot_tell": 0.01,
+   "flaky_infra": 0.0,
+   "real_regression": 0.99,
+   "config_error": 0.0
+  }
+ },
+ "B/issue_team_n4": {
+  "choice": "app",
+  "confidence": 0.91,
+  "n": 4,
+  "peak": 0.94,
+  "formula": 0.92,
+  "probabilities": {
+   "cannot_tell": 0.06,
+   "account": 0.0,
+   "app": 0.94,
+   "infra": 0.0
+  }
+ }
+}

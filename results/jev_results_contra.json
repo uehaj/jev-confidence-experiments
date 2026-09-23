@@ -1,0 +1,62 @@
+{
+ "C1/history_A_only": {
+  "model": "jev-1.13.0",
+  "choice": "real_regression",
+  "confidence": 1.0,
+  "probabilities": {
+   "real_regression": 1.0,
+   "cannot_tell": 0.0,
+   "flaky_infra": 0.0,
+   "config_error": 0.0
+  },
+  "enough_info": 0.43
+ },
+ "C1/history_B_only": {
+  "model": "jev-1.13.0",
+  "choice": "real_regression",
+  "confidence": 0.35,
+  "probabilities": {
+   "cannot_tell": 0.01,
+   "config_error": 0.0,
+   "flaky_infra": 0.48,
+   "real_regression": 0.51
+  },
+  "enough_info": 0.16
+ },
+ "C1/contradiction_A_and_B": {
+  "model": "jev-1.13.0",
+  "choice": "real_regression",
+  "confidence": 0.8,
+  "probabilities": {
+   "real_regression": 0.85,
+   "flaky_infra": 0.15,
+   "config_error": 0.0,
+   "cannot_tell": 0.0
+  },
+  "enough_info": 0.31
+ },
+ "C2/history_as_numbers": {
+  "model": "jev-1.13.0",
+  "choice": "real_regression",
+  "confidence": 1.0,
+  "probabilities": {
+   "cannot_tell": 0.0,
+   "flaky_infra": 0.0,
+   "real_regression": 1.0,
+   "config_error": 0.0
+  },
+  "enough_info": 0.68
+ },
+ "C2/history_as_words": {
+  "model": "jev-1.13.0",
+  "choice": "real_regression",
+  "confidence": 1.0,
+  "probabilities": {
+   "flaky_infra": 0.0,
+   "real_regression": 1.0,
+   "cannot_tell": 0.0,
+   "config_error": 0.0
+  },
+  "enough_info": 0.41
+ }
+}

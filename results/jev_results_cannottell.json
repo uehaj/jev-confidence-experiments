@@ -1,0 +1,40 @@
+{
+ "PAY/minimal/without": {
+  "choice": "at_market",
+  "confidence": 0.89,
+  "probabilities": {
+   "above_market": 0.06,
+   "below_market": 0.01,
+   "at_market": 0.93
+  }
+ },
+ "PAY/minimal/with": {
+  "choice": "cannot_tell",
+  "confidence": 1.0,
+  "probabilities": {
+   "below_market": 0.0,
+   "above_market": 0.0,
+   "at_market": 0.0,
+   "cannot_tell": 1.0
+  }
+ },
+ "CI/minimal/without": {
+  "choice": "real_regression",
+  "confidence": 0.8,
+  "probabilities": {
+   "flaky_infra": 0.09,
+   "real_regression": 0.87,
+   "config_error": 0.04
+  }
+ },
+ "CI/minimal/with": {
+  "choice": "cannot_tell",
+  "confidence": 0.99,
+  "probabilities": {
+   "real_regression": 0.0,
+   "cannot_tell": 1.0,
+   "flaky_infra": 0.0,
+   "config_error": 0.0
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "stateJA_qEN/full": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 1.0,
+  "urgency": 1.36,
+  "urgency_conf": 0.46,
+  "has_repro": 0.83,
+  "enough_info": 0.31
+ },
+ "stateJA_qEN/partial": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.87,
+  "urgency": 1.22,
+  "urgency_conf": 0.62,
+  "has_repro": 0.05,
+  "enough_info": 0.26
+ },
+ "stateJA_qEN/minimal": {
+  "model": "jev-1.13.0",
+  "team": "cannot_tell",
+  "team_conf": 0.99,
+  "urgency": 1.45,
+  "urgency_conf": 0.18,
+  "has_repro": 0.04,
+  "enough_info": 0.08
+ },
+ "stateJA_qEN/repro_incomplete": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.98,
+  "urgency": 1.12,
+  "urgency_conf": 0.74,
+  "has_repro": 0.25,
+  "enough_info": 0.21
+ },
+ "stateEN_qJA/full": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 1.0,
+  "urgency": 1.34,
+  "urgency_conf": 0.49,
+  "has_repro": 0.88,
+  "enough_info": 0.28
+ },
+ "stateEN_qJA/partial": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.99,
+  "urgency": 1.55,
+  "urgency_conf": 0.32,
+  "has_repro": 0.05,
+  "enough_info": 0.22
+ },
+ "stateEN_qJA/minimal": {
+  "model": "jev-1.13.0",
+  "team": "cannot_tell",
+  "team_conf": 1.0,
+  "urgency": 0.99,
+  "urgency_conf": 0.05,
+  "has_repro": 0.04,
+  "enough_info": 0.06
+ },
+ "stateEN_qJA/repro_incomplete": {
+  "model": "jev-1.13.0",
+  "team": "app",
+  "team_conf": 0.99,
+  "urgency": 1.54,
+  "urgency_conf": 0.31,
+  "has_repro": 0.31,
+  "enough_info": 0.22
+ }
+}

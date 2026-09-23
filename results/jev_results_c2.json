@@ -1,0 +1,32 @@
+{
+ "C2/table/3cu": {
+  "note": "1.5 loaves",
+  "unfair": 0.88,
+  "fair": 0.09
+ },
+ "C2/table/40cu": {
+  "note": "a sword",
+  "unfair": 0.76,
+  "fair": 0.22
+ },
+ "C2/table/300cu": {
+  "note": "quarter house",
+  "unfair": 0.6,
+  "fair": 0.39
+ },
+ "C2/table/1200cu": {
+  "note": "1 house",
+  "unfair": 0.52,
+  "fair": 0.45
+ },
+ "C2/table/3000cu": {
+  "note": "2.5 houses",
+  "unfair": 0.43,
+  "fair": 0.47
+ },
+ "C2/table/12000cu": {
+  "note": "10 houses",
+  "unfair": 0.34,
+  "fair": 0.53
+ }
+}

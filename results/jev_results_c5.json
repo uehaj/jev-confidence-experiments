@@ -1,0 +1,14 @@
+{
+ "C5/house12": {
+  "unfair": 0.61,
+  "fair": 0.33
+ },
+ "C5/house1200": {
+  "unfair": 0.43,
+  "fair": 0.53
+ },
+ "C5/house120000": {
+  "unfair": 0.28,
+  "fair": 0.63
+ }
+}
