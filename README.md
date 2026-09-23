@@ -49,7 +49,7 @@ results/   保存した結果（jev_results_*.json）
 - **保存時の加工**: 結果の JSON は API の生のレスポンスではありません。各スクリプトが、必要な項目の抜き出しと小数の丸めをして保存しています。とくに `jev_results_conf.json` は、確率をカテゴリ名なしの配列で保存しており、配列の並びもカテゴリの順と対応していません。この系列からは、最大の確率とその値は読めますが、どのカテゴリに何割付いたかは復元できません。
 - **公開にあたって除いた列**: `jev_results_conf.json` と `jev_probe_conf.py` から、公式が開示していない計算式を当てはめた比較列（`entropy_formula`）を除いています。公開準備で手を加えたのはこの列だけです。
 - **無効な比較**: `jev_results_ops.json` の `CI/notation/gigabytes` と `CI/notation/bytes` は、`3.8 GB` と `4080218931 bytes`（十進で約 4.08 GB）を比べていて、量が一致していません。記事ではこの組を結果から除いています。
-- **`cannot_tell` の説明文**: `jev_results_split.json` の `A/monitor/*` と `A/review/cannot_tell`、`jev_results_cost.json` の `review_obvious/4択(+ct)` では、`cannot_tell` の説明文に足りない情報を具体的に書いています。汎用的な「判断できない」との比較ではありません。
+- **`cannot_tell` の説明文**: `jev_results_cannottell.json` の `PAY/minimal/with`（「職種が書かれていないので比較できない」）、`jev_results_split.json` の `A/monitor/*` と `A/review/cannot_tell`、`jev_results_cost.json` の `review_obvious/4択(+ct)` では、`cannot_tell` の説明文に足りない情報を具体的に書いています。説明文がほぼ汎用（「原因を特定できない」）なのは `jev_results_cannottell.json` の `CI/minimal/with` だけです。汎用的な「判断できない」との比較ではありません。
 
 ## 実行
 
