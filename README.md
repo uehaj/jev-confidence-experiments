@@ -23,8 +23,12 @@ results/   保存した結果（jev_results_*.json）
 |---|---|---|
 | confidence は分布の尖り具合（確率と confidence の表） | `jev_results_conf.json` | `G/*` の `level` |
 | 高い confidence が意味しないこと（`cannot_tell` の有無の対照） | `jev_results_cannottell.json` | `PAY/minimal/*`、`CI/minimal/*` |
-| 低い confidence が意味しないこと | `jev_results_contra.json`、`jev_results_split.json` | `C1/history_B_only`、`A/monitor/*` |
-| ケース1　CI 失敗の振り分け | `jev_results_ops.json`、`jev_results_contra.json` | `CI/*`、`C1/*`、`C2/*` |
+| 低い confidence が意味しないこと | `jev_results_contra.json`、`jev_results_split.json` | `C1/history_B_only`、`A/monitor/cannot_tell#1` |
+| ケース1　ログの量を変えた表 | `jev_results_ops.json` | `CI/ablation/full`、`CI/ablation/partial`、`CI/ablation/minimal` |
+| ケース1　履歴の渡し方の表（ログのみ 0.20／文章 0.41／配列 0.68） | `jev_results_ops.json`、`jev_results_contra.json` | `CI/ablation/full`、`C2/history_as_words`、`C2/history_as_numbers`（`enough_info`） |
+| ケース1　候補の拮抗（0.51 対 0.48、confidence 0.35） | `jev_results_contra.json` | `C1/history_B_only` |
+| ケース1　コラム「証拠が矛盾していれば割れる、ではありませんでした」 | `jev_results_contra.json` | `C1/history_A_only`、`C1/contradiction_A_and_B` |
+| 測っていないこと（`30 s` と `30000 ms`） | `jev_results_ops.json` | `CI/notation/seconds`、`CI/notation/millis` |
 | ケース2　社内イシューのトリアージ | `jev_results_ops.json` | `ISSUE/*` |
 | コラム「質問や指示は英語にすべきか」 | `jev_results_lang.json`、`jev_results_lang_cross.json`、`jev_results_accuracy.json`、`jev_results_accuracy2.json` | すべて |
 | ケース3　ループを続けるか人を呼ぶか | `jev_results_ops.json` | `LOOP/*` |
@@ -33,16 +37,17 @@ results/   保存した結果（jev_results_*.json）
 | cannot_tell は常に入れるべきか | `jev_results_cost.json` | すべて |
 | Choice、Score、Noul それぞれの confidence 値（段階数・4択） | `jev_results_score.json`、`jev_results_split.json` | すべて、`B/*` |
 | 測っていないこと（架空の通貨での桁の効果） | `jev_results.json`、`jev_results_c2.json`〜`jev_results_c5.json` | `A/*`〜`C/*`、`C2/*`〜`C5/*` |
-| Noul どうしが補完的でない例（0.07 と 0.05） | `jev_results.json` | `F/salary/*` |
+| 補集合ではない二命題の回答例（0.07 と 0.05） | `jev_results.json` | `F/salary/$5,000,000` |
 
-`jev_results.json` の `D/*`（同一入力の繰り返し）と `E/*`（架空の通貨での日英比較）は、記事の初期の版で使った系列です。
+`jev_results.json` の `D/*`（同一入力の繰り返し）と `E/*`（架空の通貨での日英比較）、`jev_results_ops.json` の `CI/words/*` は、記事の初期の版で使った系列です。
 
 同じ入力を別の系列で測り直したものは、値がわずかに異なることがあります。たとえば未使用変数の指摘は `jev_results_ops.json` の `REVIEW/obvious` で 0.93、`jev_results_cost.json` の `review_obvious/3択(既測)` で 0.92 です。
 
 ## 注意点
 
 - **モデルのバージョン**: レスポンスの `model` を保存しているのは `jev_results_contra.json`、`jev_results_lang.json`、`jev_results_lang_cross.json`、`jev_results_accuracy.json`、`jev_results_accuracy2.json` で、いずれも `jev-1.13.0` です。それ以外の系列は `model` を保存していません。
-- **除いた列**: `jev_results_conf.json` と `jev_probe_conf.py` から、公式が開示していない計算式を当てはめた比較列（`entropy_formula`）を除いています。API の返り値そのものには手を加えていません。
+- **保存時の加工**: 結果の JSON は API の生のレスポンスではありません。各スクリプトが、必要な項目の抜き出しと小数の丸めをして保存しています。とくに `jev_results_conf.json` は、確率をカテゴリ名なしの配列で保存しており、配列の並びもカテゴリの順と対応していません。この系列からは、最大の確率とその値は読めますが、どのカテゴリに何割付いたかは復元できません。
+- **公開にあたって除いた列**: `jev_results_conf.json` と `jev_probe_conf.py` から、公式が開示していない計算式を当てはめた比較列（`entropy_formula`）を除いています。公開準備で手を加えたのはこの列だけです。
 - **無効な比較**: `jev_results_ops.json` の `CI/notation/gigabytes` と `CI/notation/bytes` は、`3.8 GB` と `4080218931 bytes`（十進で約 4.08 GB）を比べていて、量が一致していません。記事ではこの組を結果から除いています。
 - **`cannot_tell` の説明文**: `jev_results_split.json` の `A/monitor/*` と `A/review/cannot_tell`、`jev_results_cost.json` の `review_obvious/4択(+ct)` では、`cannot_tell` の説明文に足りない情報を具体的に書いています。汎用的な「判断できない」との比較ではありません。
 
